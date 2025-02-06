@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutR"
+    android:background="@color/bluCustom">
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_toLeftOf="@id/im2"
+        android:layout_width="220dp"
+        android:layout_height="295dp"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/r2" />
+    <ImageView
+        android:id="@+id/im2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="295dp"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/r2" />
+    <ImageView
+        android:id="@+id/im3"
+        android:layout_toRightOf="@+id/im2"
+        android:layout_width="220dp"
+        android:layout_height="295dp"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/r2" />
+
+    <ImageView
+        android:id="@+id/im4"
+        android:layout_toStartOf="@id/im5"
+        android:layout_width="220dp"
+        android:layout_height="295dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ab" />
+
+    <ImageView
+        android:id="@+id/im5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="295dp"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/ab" />
+    <ImageView
+        android:id="@+id/im6"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/im5"
+        android:layout_width="220dp"
+        android:layout_height="295dp"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/ab" />
+    <ImageView
+        android:id="@+id/im7"
+        android:layout_centerVertical="true"
+        android:layout_width="220dp"
+        android:layout_height="295dp"
+        app:srcCompat="@drawable/r" />
+
+    <ImageView
+        android:id="@+id/im11"
+        android:layout_centerVertical="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:rotation="90"
+        app:srcCompat="@drawable/r2" />
+
+    <FrameLayout
+        android:id="@+id/coinWithTextUp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@id/im7"
+        android:layout_margin="25dp"
+        android:background="@drawable/coin_shape">
+
+        <TextView
+            android:id="@+id/coinText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/coinWithTextDown"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/im7"
+        android:layout_margin="25dp"
+        android:background="@drawable/coin_shape">
+
+        <TextView
+            android:id="@+id/coinTextDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+
+
+       <ImageView
+           android:id="@+id/carta1"
+           android:layout_centerVertical="true"
+           android:layout_width="220dp"
+           android:layout_height="295dp"
+           app:srcCompat="@drawable/r"
+           android:layout_toRightOf="@id/im7"/>
+       <ImageView
+           android:id="@+id/carta2"
+           android:layout_centerVertical="true"
+           android:layout_width="220dp"
+           android:layout_height="295dp"
+           app:srcCompat="@drawable/r"
+           android:layout_toRightOf="@id/carta1"/>
+
+    <FrameLayout
+        android:id="@+id/coinUp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/im2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/coin_shape">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/coinDown"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@id/im5"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/coin_shape">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+
+       <Button
+           android:id="@+id/ng"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_margin="50dp"
+           android:textSize="25dp"
+           android:text="Nuova Partita" />
+
+       <Button
+           android:id="@+id/menuButton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/ng"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_margin="50dp"
+           android:textSize="25dp"
+           android:text="torna al menu" />
+       <TextView
+           android:id="@+id/resultText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_above="@id/ng"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_margin="50dp"
+           android:textSize="40dp"
+           android:textAlignment="center"
+           android:text="Result" />
+
+
+   </RelativeLayout>

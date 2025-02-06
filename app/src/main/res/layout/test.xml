@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+     >
+    <LinearLayout
+        android:id="@+id/firstLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            app:srcCompat="@drawable/r2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="150dp"
+        />
+        <ImageView
+            app:srcCompat="@drawable/r2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="150dp"/>
+        <ImageView
+            app:srcCompat="@drawable/r2"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="150dp"/>
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/cartaPrincipale"
+        android:layout_below="@id/firstLL"
+        android:layout_marginTop="100dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:rotation="90"
+        android:background="@color/black"
+        app:srcCompat="@drawable/ab" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/T1"
+            app:srcCompat="@drawable/ab"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+
+            />
+        <ImageView
+            android:id="@+id/T2"
+            app:srcCompat="@drawable/ab"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="200dp"
+            />
+        <ImageView
+            android:id="@+id/T3"
+            app:srcCompat="@drawable/ab"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
